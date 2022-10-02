@@ -1,29 +1,77 @@
 #include <iostream>
-#include <stdio.h>
 
 using namespace std;
 
 int main()
 {
-    cout << "Tugas Mencari Luas Lingkaran" << endl;
-    cout << "soal:" <<endl;
-    cout << "luas lingkaran dengan diameter 32m adalah.. (n=3,14)" <<endl;
-    cout << "jari - jari = 1/2 x 32cm" <<endl;
-    float a, b, c, jawaban;
-    a=1;
-    b=2;
-    c=32;
-    jawaban = a / b * c;
-    cout << "jari - jari= " << jawaban <<endl;
+    int x;
+    std::string x1 = "teknik informatika";
+    std::string x2 = "sistem informatika";
+    std::string x3 = "dkv";
 
-    //rumus
-    float phi, r, hasil;
-    phi = 3.14;
-    r = 16;
-    hasil = phi * r * r;
-    cout << "maka luas lingkaran = " <<hasil <<endl;
+    std ::cout <<"=====Jurusan=====";
+    std ::cout <<"\n1." << x1;
+    std ::cout <<"\n2." << x2;
+    std ::cout <<"\n3." << x3;
+    std ::cout <<"\nMasukan jurusan anda: ";
+    std ::cin >> x;
+
+    if (x == 1) {
+        std ::cout << "Jurusan anda adalah "
+<< x1;
+    }
+    if (x == 2) {
+       std ::cout << "Jurusan anda adalah "
+<< x2;
+    }
+    if (x == 3) {
+        std ::cout << "Jurusan anda adalah "
+<< x3;
+    }
+    if (x < 0 || x > 3) {
+        std ::cout << "Jurusan tidak diketahui";
+    }
+std ::cout << "\n";
 
 
+    //number 1
+    int a;
+    std ::cout << "\nMasukan angka: ";
+    std ::cin >> a;
+    if (a<= 25 && a<= 50 && a % 2== 0) {
+        std ::cout << "bilangan sesuai";
+    }
+    else{
+        std ::cout << "bilangan tidak sesuai";
+    }
 
+std ::cout << "\n";
+
+    //number2
+    int b;
+    std ::cout <<"\nMasukan angka: ";
+    std ::cin >> b;
+    if (b % 2 == 1 && (13 <= b || 5>= b)) {
+        std ::cout << "bilangan sesuai";
+    }
+    else{
+        std ::cout << "bilangan tidak sesuai";
+    }
+
+std ::cout <<"\n";
+
+    //number3
+    int c;
+    std ::cout << "\nMasukan angka: ";
+    std ::cin >> c;
+
+     if (25 <= c && c <=50 || (3 <= c && c <= 15 && c % 2 == 1)) {
+      std ::cout << "bilangan sesuai";
+     }
+    else {
+        std ::cout << "bilangan tidak sesuai";
+    }
     return 0;
+
+
 }
